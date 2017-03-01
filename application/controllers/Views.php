@@ -41,9 +41,6 @@ class Views extends Application
         $parms = ['display_tasks' => $converted];
         return $this->parser->parse('by_priority', $parms, true);
     }
-
-
-
 }
 
 // return -1, 0, or 1 of $a's priority is higher, equal to, or lower than $b's
