@@ -1,5 +1,8 @@
 # starter-todo
-Starter project for COMP4711 lab 5
+Starter project for COMP4711 lab 6
 
-It works out of the box, but is woefully incomplete :(
-Your job is to fix it, per lab 5 directions :)
+1. finished Job 4 - Maintenance List
+
+2. finished Job 6 - Pagination
+
+3. finished Job 7 - Simple User Roles

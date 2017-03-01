@@ -29,13 +29,6 @@ class Tasks extends MY_Model {
 
         return $converted;
     }
-
-
-
-
-
-
-
 }
 
 // return -1, 0, or 1 of $a's category name is earlier, equal to, or later than $b's
