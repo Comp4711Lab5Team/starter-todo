@@ -17,8 +17,10 @@ class Tasks extends MY_Model {
         }
 
         // substitute the category name, for sorting
-        foreach ($undone as $task)
+        foreach ($undone as $task){
             $task->group = $this->groups->get($task->group)->name;
+        }
+
 
         // order them by category
         usort($undone, "orderByCategory");
@@ -38,6 +40,7 @@ class Tasks extends MY_Model {
             ['field' => 'priority', 'label' => 'Priority', 'rules' => 'integer|less_than[4]'],
             ['field' => 'size', 'label' => 'Task size', 'rules' => 'integer|less_than[4]'],
             ['field' => 'group', 'label' => 'Task group', 'rules' => 'integer|less_than[5]'],
+            ['field' => 'status', 'label' => 'Task status', 'rules' => 'integer|less_than[5]']
         );
         return $config;
     }
